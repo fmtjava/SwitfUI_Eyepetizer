@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+struct Follow : Codable {
+    var itemList: [VideoCardItem] = []
+    var nextPageUrl: String?
+}

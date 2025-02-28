@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+struct Issue : Codable {
+    var itemList: [VideoCardItem] = []
+    var nextPageUrl: String?
+}

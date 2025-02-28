@@ -8,11 +8,25 @@
 import SwiftUI
 
 struct TitleBar: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    var title : String
+    var showDivider: Bool = false
+    private var titleLocalized: String {
+        NSLocalizedString(title, comment: "")
     }
-}
-
-#Preview {
-    TitleBar()
+    var body: some View {
+        VStack {
+            ZStack {
+                Text(titleLocalized)
+                    .font(.system(size: 18, weight: .bold))
+                    .foregroundColor(.black)
+            }
+            .frame(maxWidth: .infinity)
+            .frame(height: 45)
+            .background(Color.white)
+            
+            if showDivider {
+                Divider().background(Color.gray)
+            }
+        }
+    }
 }

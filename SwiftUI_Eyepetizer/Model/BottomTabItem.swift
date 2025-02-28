@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+struct BottomTabItem {
+    let titleKey: String
+    let normalIcon: String
+    let selectIcon: String
+    
+    var localizedTitle: String {
+        return NSLocalizedString(titleKey, comment: "")
+    }
+}

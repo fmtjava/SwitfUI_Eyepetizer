@@ -5,3 +5,21 @@
   Created by heytea on 2025/2/5.
   
 */
+
+"daily_paper" = "日报";
+"discover" = "发现";
+"hot" = "热门";
+"mime" = "我的";
+"no_more_data" = "没有更多数据了";
+"invalid_url" = "Please check the URL string and try again.";
+"load_fail" = "加载失败";
+"person_go_homepage" = "查看个人主页";
+"person_collection" = "收藏";
+"person_comment" = "评论";
+"person_mine_message" = "我的消息";
+"person_mine_attention" = "我的关注";
+"person_mine_cache" = "我的缓存";
+"person_view_history" = "观看记录";
+"person_feedback" = "意见反馈";
+"add_follow" = "+ 关注";
+

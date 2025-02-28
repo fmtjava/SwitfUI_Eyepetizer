@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+class AppViewModel : ObservableObject {
+    @Published var selectedTabIndex = 0
+    
+    func setSelectedTabIndex(index: Int) {
+        selectedTabIndex = index
+    }
+}

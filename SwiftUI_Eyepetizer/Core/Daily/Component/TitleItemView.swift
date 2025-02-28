@@ -7,12 +7,15 @@
 
 import SwiftUI
 
-struct TitleItemView: View {
+struct TitleItemView : View {
+    var text: String
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack(alignment: .center) {
+            Text(text)
+                .font(.system(size: 18, weight: .bold))
+                .foregroundColor(.black.opacity(0.87))
+        }
+        .padding(.top, 5)
+        .padding(.bottom, 10)
     }
-}
-
-#Preview {
-    TitleItemView()
 }

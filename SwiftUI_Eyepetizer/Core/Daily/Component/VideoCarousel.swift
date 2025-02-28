@@ -6,13 +6,23 @@
 //
 
 import SwiftUI
+import ACarousel
+import SDWebImage
+import SDWebImageSwiftUI
 
 struct VideoCarousel: View {
+    var bannerList: [String] = []
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ACarousel(bannerList, id: \.self, autoScroll: .active(3)) { item in
+            WebImage(url: URL(string: item))
+                .resizable()
+                .indicator(.activity)
+                .transition(.fade)
+                .scaledToFit()
+                .cornerRadius(4)
+        }
+        .frame(height: 200)
     }
 }
 
-#Preview {
-    VideoCarousel()
-}

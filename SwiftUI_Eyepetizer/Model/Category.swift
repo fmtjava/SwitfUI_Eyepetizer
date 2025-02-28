@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+struct Category : Codable {
+    var id: Int
+    var name : String
+    var description: String
+    var bgPicture: String
+    var headerImage: String
+}

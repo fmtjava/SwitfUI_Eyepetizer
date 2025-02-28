@@ -25,8 +25,16 @@ enum ApiService : String {
     
     case recommendList = "v7/community/tab/rec"
     
+    case relatedList = "v4/video/related"
+    
     var url : String {
         return baseURL + self.rawValue
     }
-    
 }
+
+let session: URLSession = {
+        let configuration = URLSessionConfiguration.default
+        configuration.timeoutIntervalForRequest = 10.0
+        configuration.timeoutIntervalForResource = 10.0
+        return URLSession(configuration: configuration)
+    }()

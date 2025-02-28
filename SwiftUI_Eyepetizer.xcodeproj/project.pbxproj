@@ -6,6 +6,14 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		2E0672062D6AF5E10046F089 /* WebView in Frameworks */ = {isa = PBXBuildFile; productRef = 2E0672052D6AF5E10046F089 /* WebView */; };
+		2E0BCBBF2D5CA92100881A7C /* WaterfallGrid in Frameworks */ = {isa = PBXBuildFile; productRef = 2E0BCBBE2D5CA92100881A7C /* WaterfallGrid */; };
+		2E4530EB2D5467050006C625 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2E4530EA2D5467050006C625 /* SDWebImageSwiftUI */; };
+		2E92CCFC2D59CB5A007A4E0A /* ToastUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2E92CCFB2D59CB5A007A4E0A /* ToastUI */; };
+		2EA93FC52D548FC300ABC4D0 /* ACarousel in Frameworks */ = {isa = PBXBuildFile; productRef = 2EA93FC42D548FC300ABC4D0 /* ACarousel */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		2E987A182D53049B00A9E75B /* SwiftUI_Eyepetizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_Eyepetizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,16 +31,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E92CCFC2D59CB5A007A4E0A /* ToastUI in Frameworks */,
+				2E0BCBBF2D5CA92100881A7C /* WaterfallGrid in Frameworks */,
+				2EA93FC52D548FC300ABC4D0 /* ACarousel in Frameworks */,
+				2E0672062D6AF5E10046F089 /* WebView in Frameworks */,
+				2E4530EB2D5467050006C625 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E6FFFB72D62221F00650E00 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2E987A0F2D53049B00A9E75B = {
 			isa = PBXGroup;
 			children = (
 				2E987A1A2D53049B00A9E75B /* SwiftUI_Eyepetizer */,
+				2E6FFFB72D62221F00650E00 /* Frameworks */,
 				2E987A192D53049B00A9E75B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,6 +86,11 @@
 			);
 			name = SwiftUI_Eyepetizer;
 			packageProductDependencies = (
+				2E4530EA2D5467050006C625 /* SDWebImageSwiftUI */,
+				2EA93FC42D548FC300ABC4D0 /* ACarousel */,
+				2E92CCFB2D59CB5A007A4E0A /* ToastUI */,
+				2E0BCBBE2D5CA92100881A7C /* WaterfallGrid */,
+				2E0672052D6AF5E10046F089 /* WebView */,
 			);
 			productName = SwiftUI_Eyepetizer;
 			productReference = 2E987A182D53049B00A9E75B /* SwiftUI_Eyepetizer.app */;
@@ -94,6 +120,13 @@
 			);
 			mainGroup = 2E987A0F2D53049B00A9E75B;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				2E4530E92D5467050006C625 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				2EA93FC32D548FC300ABC4D0 /* XCRemoteSwiftPackageReference "ACarousel" */,
+				2E92CCFA2D59CB5A007A4E0A /* XCRemoteSwiftPackageReference "ToastUI" */,
+				2E0BCBBD2D5CA92100881A7C /* XCRemoteSwiftPackageReference "WaterfallGrid" */,
+				2E0672042D6AF5E10046F089 /* XCRemoteSwiftPackageReference "SwiftUI-WebView" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 2E987A192D53049B00A9E75B /* Products */;
 			projectDirPath = "";
@@ -254,6 +287,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI_Eyepetizer/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUI-Eyepetizer-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -282,6 +316,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI_Eyepetizer/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUI-Eyepetizer-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -322,6 +357,77 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2E0672042D6AF5E10046F089 /* XCRemoteSwiftPackageReference "SwiftUI-WebView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kylehickinson/SwiftUI-WebView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.1;
+			};
+		};
+		2E0BCBBD2D5CA92100881A7C /* XCRemoteSwiftPackageReference "WaterfallGrid" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/paololeonardi/WaterfallGrid.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+		2E4530E92D5467050006C625 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.3;
+			};
+		};
+		2E92CCFA2D59CB5A007A4E0A /* XCRemoteSwiftPackageReference "ToastUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/quanshousio/ToastUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		2EA93FC32D548FC300ABC4D0 /* XCRemoteSwiftPackageReference "ACarousel" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JWAutumn/ACarousel";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2E0672052D6AF5E10046F089 /* WebView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2E0672042D6AF5E10046F089 /* XCRemoteSwiftPackageReference "SwiftUI-WebView" */;
+			productName = WebView;
+		};
+		2E0BCBBE2D5CA92100881A7C /* WaterfallGrid */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2E0BCBBD2D5CA92100881A7C /* XCRemoteSwiftPackageReference "WaterfallGrid" */;
+			productName = WaterfallGrid;
+		};
+		2E4530EA2D5467050006C625 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2E4530E92D5467050006C625 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		2E92CCFB2D59CB5A007A4E0A /* ToastUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2E92CCFA2D59CB5A007A4E0A /* XCRemoteSwiftPackageReference "ToastUI" */;
+			productName = ToastUI;
+		};
+		2EA93FC42D548FC300ABC4D0 /* ACarousel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2EA93FC32D548FC300ABC4D0 /* XCRemoteSwiftPackageReference "ACarousel" */;
+			productName = ACarousel;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2E987A102D53049B00A9E75B /* Project object */;
 }

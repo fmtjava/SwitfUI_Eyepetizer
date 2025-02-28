@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+struct Daily : Codable {
+    var issueList: [Issue]
+    var nextPageUrl: String?
+}
