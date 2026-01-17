@@ -1,7 +1,7 @@
 # SwitfUI_Eyepetizer
 一款基于 SwitfUI 实现的精美仿开眼视频App(提供Kotlin、Flutter、React Native、小程序版本 😁 )<br /><br />
 Kotlin：[Jetpack_Kotlin_Eyepetizer](https://github.com/fmtjava/Jetpack_Kotlin_Eyepetizer)<br /><br />
-Compose：[Compose_Eyepetizer]([https://github.com/fmtjava/Jetpack_Kotlin_Eyepetizer](https://github.com/fmtjava/Compose_Eyepetizer))<br /><br />
+Compose：[Compose_Eyepetizer](https://github.com/fmtjava/Compose_Eyepetizer))<br /><br />
 Flutter版：[flutter_eyepetizer](https://github.com/fmtjava/flutter_eyepetizer)<br /><br />
 ReactNative版：[ReactNative_Eyepetizer](https://github.com/fmtjava/ReactNative_Eyepetizer)<br /><br />
 小程序版：[wx_eyepetizer](https://github.com/fmtjava/wx_eyepetizer)<br /><br />
