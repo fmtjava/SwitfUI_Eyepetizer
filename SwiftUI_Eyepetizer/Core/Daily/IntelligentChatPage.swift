@@ -54,7 +54,7 @@ struct IntelligentChatPage: View {
                     .padding(.bottom, 16)
                     .frame(minHeight: geometry.size.height - 60, alignment: .topLeading)
                     .frame(maxWidth: .infinity, alignment: .topLeading)
-                    .background(Color.gray.opacity(0.3))
+                    .background(Color.gray.opacity(0.2))
                 }
                 .frame(maxHeight: .infinity)
                 inputBar
