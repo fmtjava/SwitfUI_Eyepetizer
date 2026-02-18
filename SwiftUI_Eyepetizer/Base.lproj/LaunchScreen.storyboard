@@ -21,9 +21,8 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="9b0-lD-9Pr">
-                                <rect key="frame" x="0.0" y="-6" width="393" height="858"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="9b0-lD-9Pr">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
@@ -32,6 +31,10 @@
                             <constraint firstItem="Bcu-3y-fUS" firstAttribute="centerX" secondItem="obG-Y5-kRd" secondAttribute="centerX" id="5cz-MP-9tL"/>
                             <constraint firstItem="obG-Y5-kRd" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" symbolic="YES" id="SfN-ll-jLj"/>
                             <constraint firstAttribute="bottom" secondItem="obG-Y5-kRd" secondAttribute="bottom" constant="20" id="Y44-ml-fuU"/>
+                            <constraint firstItem="9b0-lD-9Pr" firstAttribute="bottom" secondItem="Ze5-6b-2t3" secondAttribute="bottom" id="img-bottom"/>
+                            <constraint firstItem="9b0-lD-9Pr" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="img-leading"/>
+                            <constraint firstItem="9b0-lD-9Pr" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="img-top"/>
+                            <constraint firstItem="9b0-lD-9Pr" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailing" id="img-trailing"/>
                         </constraints>
                     </view>
                 </viewController>

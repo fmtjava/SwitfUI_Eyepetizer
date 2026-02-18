@@ -11,6 +11,7 @@ class WatchRecordViewModel : ObservableObject {
     
     let watchVideoListKey : String = "watch_video_list_key"
     
+    // 计算属性
     @Published var watchVideoItemList: [VideoCardItemData] = [] {
         didSet {
             saveItem()
@@ -34,5 +35,4 @@ class WatchRecordViewModel : ObservableObject {
             UserDefaults.standard.setValue(data, forKey: watchVideoListKey)
         }
     }
-    
 }

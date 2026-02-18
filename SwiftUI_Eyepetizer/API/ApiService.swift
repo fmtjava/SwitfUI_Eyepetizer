@@ -27,6 +27,9 @@ enum ApiService : String {
     
     case relatedList = "v4/video/related"
     
+    // 智能聊天相关接口
+    case intelligentChat = "https://spark-api-open.xf-yun.com/v2/chat/completions";
+    
     var url : String {
         return baseURL + self.rawValue
     }
@@ -38,3 +41,11 @@ let session: URLSession = {
         configuration.timeoutIntervalForResource = 10.0
         return URLSession(configuration: configuration)
     }()
+
+/// 智能聊天 API 专用 Session，大模型响应较慢需要更长超时
+let chatSession: URLSession = {
+    let configuration = URLSessionConfiguration.default
+    configuration.timeoutIntervalForRequest = 120.0   // 2 分钟
+    configuration.timeoutIntervalForResource = 120.0
+    return URLSession(configuration: configuration)
+}()

@@ -18,7 +18,9 @@ struct DailyScreen: View {
     
     var body: some View {
         VStack {
-            TitleBar(title: "daily_paper", showDivider: true)
+            TitleBar(title: "daily_paper", showDivider: true, onSearchTapped: {
+                AnyView(IntelligentChatPage())
+            })
             ScrollView(.vertical, showsIndicators: false) {
                 VStack {
                     if viewModel.bannerList.count > 0 {

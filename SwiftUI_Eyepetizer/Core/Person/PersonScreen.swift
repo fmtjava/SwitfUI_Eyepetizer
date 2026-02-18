@@ -27,6 +27,10 @@ struct PersonScreen: View {
                             .frame(width: 80, height: 80)
                             .padding(.top, 30)
                     }
+                    .buttonStyle(.borderless)
+                    .onChange(of: viewModel.imageSelection) { _, newValue in
+                        viewModel.setImage(from: newValue)
+                    }
                 }
                 
                 Text("fmtJava")
@@ -88,7 +92,7 @@ struct PersonScreen: View {
                     Text("person_mine_message")
                         .font(.system(size: 16))
                         .foregroundColor(.black.opacity(0.5))
-                        .frame(width: .infinity, height: 50)
+                        .frame(maxWidth: .infinity, minHeight: 50)
                 })
                 .padding(.top, 10)
                 
@@ -98,7 +102,6 @@ struct PersonScreen: View {
                     Text("person_mine_attention")
                         .font(.system(size: 16))
                         .foregroundColor(.black.opacity(0.5))
-                        .frame(width: .infinity, height: 50)
                 })
                 
                 Button(action: {
@@ -107,14 +110,14 @@ struct PersonScreen: View {
                     Text("person_mine_cache")
                         .font(.system(size: 16))
                         .foregroundColor(.black.opacity(0.5))
-                        .frame(width: .infinity, height: 50)
+                        .frame(maxWidth: .infinity, minHeight: 50)
                 })
                 
                 NavigationLink(destination: WatchRecordScreen(), label: {
                     Text("person_view_history")
                         .font(.system(size: 16))
                         .foregroundColor(.black.opacity(0.5))
-                        .frame(width: .infinity, height: 50)
+                        .frame(maxWidth: .infinity, minHeight: 50)
                 })
                 
                 Button(action: {
@@ -123,7 +126,7 @@ struct PersonScreen: View {
                     Text("person_feedback")
                         .font(.system(size: 16))
                         .foregroundColor(.black.opacity(0.5))
-                        .frame(width: .infinity, height: 50)
+                        .frame(maxWidth: .infinity, minHeight: 50)
                 })
             }
         }
