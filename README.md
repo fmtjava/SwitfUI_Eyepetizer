@@ -69,7 +69,7 @@ ReactNative版：[ReactNative_Eyepetizer](https://github.com/fmtjava/ReactNative
    
  # 更新日志
  ### v1.0
-   * 初始化项目，完成仿开眼视频App核心功能，目前实现首页、发现、热门、分类、我的、视频详情、视频播放等功能。
+   * 初始化项目，完成仿开眼视频App核心功能，目前实现首页、发现、热门、分类、我的、视频详情、视频播放、智能对话等功能。
 # Thanks
   - [ToastUI](https://github.com/quanshousio/ToastUI) 
   - [ACarousel](https://github.com/JWAutumn/ACarousel) 
