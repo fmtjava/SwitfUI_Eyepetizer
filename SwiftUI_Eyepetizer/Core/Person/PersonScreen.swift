@@ -92,9 +92,8 @@ struct PersonScreen: View {
                     Text("person_mine_message")
                         .font(.system(size: 16))
                         .foregroundColor(.black.opacity(0.5))
-                        .frame(maxWidth: .infinity, minHeight: 50)
                 })
-                .padding(.top, 10)
+                .padding(.top, 20)
                 
                 Button(action: {
                     
@@ -103,6 +102,7 @@ struct PersonScreen: View {
                         .font(.system(size: 16))
                         .foregroundColor(.black.opacity(0.5))
                 })
+                .padding(.top, 20)
                 
                 Button(action: {
                     
@@ -110,15 +110,15 @@ struct PersonScreen: View {
                     Text("person_mine_cache")
                         .font(.system(size: 16))
                         .foregroundColor(.black.opacity(0.5))
-                        .frame(maxWidth: .infinity, minHeight: 50)
                 })
+                .padding(.top, 20)
                 
                 NavigationLink(destination: WatchRecordScreen(), label: {
                     Text("person_view_history")
                         .font(.system(size: 16))
                         .foregroundColor(.black.opacity(0.5))
-                        .frame(maxWidth: .infinity, minHeight: 50)
                 })
+                .padding(.top, 20)
                 
                 Button(action: {
                     
@@ -126,8 +126,8 @@ struct PersonScreen: View {
                     Text("person_feedback")
                         .font(.system(size: 16))
                         .foregroundColor(.black.opacity(0.5))
-                        .frame(maxWidth: .infinity, minHeight: 50)
                 })
+                .padding(.top, 20)
             }
         }
     }
