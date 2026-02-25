@@ -1,0 +1,6 @@
+framework module Pods_SwiftUI_Eyepetizer {
+  umbrella header "Pods-SwiftUI_Eyepetizer-umbrella.h"
+
+  export *
+  module * { export * }
+}

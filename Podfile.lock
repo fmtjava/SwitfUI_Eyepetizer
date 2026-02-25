@@ -1,0 +1,18 @@
+PODS:
+  - BuglyPro (2.8.1):
+    - BuglyPro/BuglyPro (= 2.8.1)
+  - BuglyPro/BuglyPro (2.8.1)
+
+DEPENDENCIES:
+  - BuglyPro (= 2.8.1)
+
+SPEC REPOS:
+  trunk:
+    - BuglyPro
+
+SPEC CHECKSUMS:
+  BuglyPro: 4b41dc3e56d69cdc5be79134944ed071e6e0dd34
+
+PODFILE CHECKSUM: 8566cba0592540173b30061e9fb516fa5ca97645
+
+COCOAPODS: 1.16.2

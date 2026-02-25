@@ -1,0 +1,60 @@
+{
+  "originHash" : "268d6fd2b264e3b608733419140923e5151590ff9223d70166622fcab3e54131",
+  "pins" : [
+    {
+      "identity" : "acarousel",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/JWAutumn/ACarousel",
+      "state" : {
+        "revision" : "8a322513580f21288fd87eb3a1341c247b3e2a76",
+        "version" : "0.2.0"
+      }
+    },
+    {
+      "identity" : "sdwebimage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SDWebImage/SDWebImage.git",
+      "state" : {
+        "revision" : "449e8f8f10377f620db8ad22ea81208eecf6325f",
+        "version" : "5.21.6"
+      }
+    },
+    {
+      "identity" : "sdwebimageswiftui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SDWebImage/SDWebImageSwiftUI.git",
+      "state" : {
+        "revision" : "0e331457ca9af2f0b08bcaa138a91ffb907b004f",
+        "version" : "3.1.4"
+      }
+    },
+    {
+      "identity" : "swiftui-webview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kylehickinson/SwiftUI-WebView.git",
+      "state" : {
+        "revision" : "8abc88c7c5c98da391a60a401110ddf59a7b961a",
+        "version" : "0.3.1"
+      }
+    },
+    {
+      "identity" : "toastui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/quanshousio/ToastUI.git",
+      "state" : {
+        "revision" : "146e2f52c132f681fbf798c8c9f0eb52f021f346",
+        "version" : "4.0.0"
+      }
+    },
+    {
+      "identity" : "waterfallgrid",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/paololeonardi/WaterfallGrid.git",
+      "state" : {
+        "revision" : "c7c08652c3540adf8e48409c351879b4caea7e89",
+        "version" : "1.1.0"
+      }
+    }
+  ],
+  "version" : 3
+}
